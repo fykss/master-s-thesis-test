@@ -10,7 +10,7 @@
                 <h1 class="h3 mb-4 font-weight-normal">Log in</h1>
             </#if>
             <div class="form-group row">
-                <div class="col-sm-8">
+                <div class="col-lg-8">
                     <input type="text" name="username" value="<#if user??>${user.username}</#if>"
                            class="form-control ${(usernameError??)?string('is-invalid', '')}"
                            placeholder="User name" />
@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div class="form-group row">
-                <div class="col-sm-8">
+                <div class="col-lg-8">
                     <input type="password" name="password"
                            class="form-control ${(passwordError??)?string('is-invalid', '')}"
                            placeholder="Password" />
@@ -35,7 +35,7 @@
             </div>
             <#if isRegisterForm>
                 <div class="form-group row">
-                    <div class="col-sm-8">
+                    <div class="col-lg-8">
                         <input type="password" name="password2"
                                class="form-style form-control ${(password2Error??)?string('is-invalid', '')}"
                                placeholder="Confirm password" />
@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <div class="col-sm-8">
+                    <div class="col-lg-8">
                         <input type="email" name="email" value="<#if user??>${user.email}</#if>"
                                class="form-control ${(emailError??)?string('is-invalid', '')}"
                                placeholder="Email" />
