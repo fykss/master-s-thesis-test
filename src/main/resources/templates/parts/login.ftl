@@ -67,6 +67,7 @@
                             <input class="form-check-input" type="checkbox" value="anonymous" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                                 Create anonymous account
+                                <a href=""> About</a>
                             </label>
                         </div>
                     </div>
@@ -90,6 +91,6 @@
 <#macro logout>
 <form action="/logout" method="post">
     <input type="hidden" name="_csrf" value="${_csrf.token}" />
-    <button class="btn btn-primary" type="submit"><#if user??>Sign Out<#else>Log in</#if></button>
+    <button class="btn btn-outline-primary" type="submit"><#if user??>Sign Out<#else>Get started</#if></button>
 </form>
 </#macro>

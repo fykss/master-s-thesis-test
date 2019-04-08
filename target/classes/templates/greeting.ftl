@@ -1,6 +1,5 @@
 <#import "parts/common.ftl" as c>
 
 <@c.page>
-<h5>Hello, guest</h5>
-<div>This is a simple clone off Twitter</div>
+<h1 class="h3 mb-4 font-weight-normal">Negative result is also a result, share it</h1>
 </@c.page>

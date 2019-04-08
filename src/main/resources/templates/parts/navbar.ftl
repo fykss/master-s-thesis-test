@@ -1,8 +1,11 @@
 <#include "security.ftl">
 <#import "login.ftl" as l>
 
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/">Sweater</a>
+    <div class="container">
+    <a class="navbar-brand" href="/">DBNeg</a>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -14,10 +17,10 @@
             </li>
             <#if user??>
                 <li class="nav-item">
-                    <a class="nav-link" href="/main">Messages</a>
+                    <a class="nav-link" href="/main">Article</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/user-messages/${currentUserId}">My messages</a>
+                    <a class="nav-link" href="/user-messages/${currentUserId}">My Article</a>
                 </li>
             </#if>
             <#if isAdmin>
@@ -32,7 +35,8 @@
             </#if>
         </ul>
 
-        <div class="navbar-text mr-3"><#if user??>${name}<#else>Please, login</#if></div>
+        <div class="navbar-text mr-3"><#if user??>${name}<#else>Please, sign in</#if></div>
         <@l.logout />
+    </div>
     </div>
 </nav>
