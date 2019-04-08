@@ -2,7 +2,7 @@
 <#import "login.ftl" as l>
 
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
     <a class="navbar-brand" href="/">DBNeg</a>
 
