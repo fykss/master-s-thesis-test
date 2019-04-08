@@ -21,6 +21,20 @@
                     </#if>
                 </div>
             </div>
+            <#if isRegisterForm>
+                <div class="form-group row">
+                    <div class="col-lg-8">
+                        <input type="email" name="email" value="<#if user??>${user.email}</#if>"
+                               class="form-control ${(emailError??)?string('is-invalid', '')}"
+                               placeholder="Email" />
+                            <#if emailError??>
+                                <div class="invalid-feedback">
+                                    ${emailError}
+                                </div>
+                            </#if>
+                    </div>
+                </div>
+            </#if>
             <div class="form-group row">
                 <div class="col-lg-8">
                     <input type="password" name="password"
@@ -44,35 +58,28 @@
                                 ${password2Error}
                             </div>
                         </#if>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <div class="col-lg-8">
-                        <input type="email" name="email" value="<#if user??>${user.email}</#if>"
-                               class="form-control ${(emailError??)?string('is-invalid', '')}"
-                               placeholder="Email" />
-                        <#if emailError??>
-                            <div class="invalid-feedback">
-                                ${emailError}
-                            </div>
-                        </#if>
-                    </div>
-                </div>
-                <div class="radio my-4">
-                    <div class="radio_input">
-                        <input type="radio" name="gender" value="student" checked><span
-                            class="radio_input-item">Student</span><br>
-                    </div>
-                    <div class="radio_input">
-                        <input type="radio" name="gender" value="professor"><span
-                            class="radio_input-item">Professor</span><br>
+                        <select class="custom-select my-4">
+                            <option selected>Select your position</option>
+                            <option value="student">Student</option>
+                            <option value="professor">Professor</option>
+                        </select>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="anonymous" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Create anonymous account
+                            </label>
+                        </div>
                     </div>
                 </div>
             </#if>
             <input type="hidden" name="_csrf" value="${_csrf.token}" />
 
             <button class="btn btn-primary btn-block1" type="submit"><#if isRegisterForm>Register<#else>Sign In</#if></button>
-            <#if !isRegisterForm><a href="/registration" class="mx-5">Registration</a></#if>
+            <#if isRegisterForm>
+                <a href="/login" class="mx-5"><br>Log in</a>
+            <#else>
+                <a href="/registration" class="mx-5">Registration</a>
+            </#if>
         </form>
         </div>
         <div class="col"></div>

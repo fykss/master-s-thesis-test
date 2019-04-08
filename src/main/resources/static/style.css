@@ -483,4 +483,9 @@ input:focus{
     display: block;
     width: 65%;
     margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.form-check {
+    color: #585858;
 }
