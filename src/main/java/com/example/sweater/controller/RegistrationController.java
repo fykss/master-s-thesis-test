@@ -21,16 +21,9 @@ import java.util.Map;
 
 @Controller
 public class RegistrationController {
-//    private final static String CAPTCHA_URL = "https://www.google.com/recaptcha/api/siteverify?secret=%s&response=%s";
 
     @Autowired
     private UserSevice userSevice;
-
-//    @Value("${recaptcha.secret}")
-//    private String secret;
-
-//    @Autowired
-//    private RestTemplate restTemplate;
 
     @GetMapping("/registration")
     public String registration() {
@@ -40,18 +33,10 @@ public class RegistrationController {
     @PostMapping("/registration")
     public String addUser(
             @RequestParam("password2") String passwordConfirm,
-//            @RequestParam("g-recaptcha-response") String captchaResponce,
             @Valid User user,
             BindingResult bindingResult,
             Model model
     ) {
-//        String url = String.format(secret, captchaResponce);
-//        CaptchaResponseDto response = restTemplate.postForObject(url, Collections.emptyList(), CaptchaResponseDto.class);
-
-//        if (!response.isSuccess()) {
-//            model.addAttribute("captchaError", "Fill captcha");
-//        }
-
         boolean isConfirmEmpty = StringUtils.isEmpty(passwordConfirm);
 
         if (isConfirmEmpty) {

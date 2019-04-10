@@ -2,7 +2,6 @@
 <#import "pager.ftl" as p>
 
 <@p.pager page url />
-
 <div class="card-columns" id="message-list">
     <#list page.content as message>
         <div class="card my-3" data-id="${message.id}">
@@ -10,7 +9,7 @@
                 <img src="/img/${message.filename}" class="card-img-top" />
             </#if>
             <div class="m-2">
-                <span>${message.text}</span><br/>
+                <a href="/">${message.text}</a><br/>
                 <i>#${message.tag}</i>
             </div>
             <div class="card-footer text-muted container">
