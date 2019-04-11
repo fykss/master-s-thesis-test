@@ -499,7 +499,8 @@ input:focus{
 }
 
 .common-title {
-    background-color: #fafafa;
+    /*background: url("/templates/dna-molecule-in-water.png");*/
+    /*background-size: cover;*/
     width: 100%;
     height: 300px;
 }
