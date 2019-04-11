@@ -498,19 +498,16 @@ input:focus{
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08);
 }
 
-.common-title {
-    /*background: url("/templates/dna-molecule-in-water.png");*/
-    /*background-size: cover;*/
-    width: 100%;
-    height: 300px;
-}
+/*.common-title {*/
+    /**/
+/*}*/
 
-.common-title::after {
-    content: "";
-    width: 100%;
-    height: 1px;
-    background-color: #e2e2e29e;
-    display: inline-block;
-    position: relative;
-    top: 255px;
-}
+/*.common-title::after {*/
+    /*content: "";*/
+    /*width: 100%;*/
+    /*height: 1px;*/
+    /*background-color: #e2e2e29e;*/
+    /*display: inline-block;*/
+    /*position: relative;*/
+    /*top: 255px;*/
+/*}*/
