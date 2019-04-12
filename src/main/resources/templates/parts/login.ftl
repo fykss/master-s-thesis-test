@@ -1,6 +1,7 @@
 <#macro login path isRegisterForm>
+<div id="particles-js"></div>
 <div class="container">
-    <div class="row">
+    <div class="row form-container">
         <div class="col"></div>
         <div class="col-md-6 form">
             <form action="${path}" method="post" class="form-signin">
