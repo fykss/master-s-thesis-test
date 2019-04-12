@@ -10,11 +10,12 @@
         <span>If you have something to add on the subject, don't hesitate</span>
         <div class="greeting-button">
             <a href="/login" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Share it</a>
-            <#--<button class="btn btn-primary btn-lg">Share it</button>-->
             <a href="/" class="btn btn-outline-primary btn-lg" role="button" aria-pressed="true">About us</a>
         </div>
     </div>
 </div>
+
+    <#include "parts/news.ftl">
 
     <#include "parts/footer.ftl">
 
