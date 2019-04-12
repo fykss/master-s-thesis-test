@@ -89,10 +89,3 @@
     </div>
 </div>
 </#macro>
-
-<#macro logout>
-<form action="/logout" method="post">
-    <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-    <button class="btn btn-outline-primary" type="submit"><#if user??>Sign Out<#else>Get started</#if></button>
-</form>
-</#macro>

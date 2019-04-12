@@ -4,6 +4,7 @@ body {
     -ms-flex-align: center;
     align-items: center;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.01);
 }
 
 body::-webkit-scrollbar {
@@ -594,8 +595,40 @@ input:focus {
 }
 
 .common-title {
-    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    /*font-family: "Helvetica Neue", sans-serif;*/
+    font-size: 1.3em;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    text-align: center;
 }
+
+.common-title h1 {
+    font-weight: 500;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.common-title span {
+    color: #585858;
+    margin-bottom: 2rem;
+}
+
+.footer {
+    font-size: .8rem;
+}
+.footer-link a {
+    margin-right: 15px;
+    color: #555;
+}
+.footer-link a:hover {
+    color: #313131;
+}
+
+.container-social {
+    background-color: rgba(198, 198, 198, 0.55);
+}
+

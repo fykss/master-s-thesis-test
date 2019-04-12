@@ -2,7 +2,7 @@
 <#import "pager.ftl" as p>
 
 <@p.pager page url />
-<div class="card-columns" id="message-list">
+<div class="container card-columns" id="message-list">
     <#list page.content as message>
         <div class="card my-3" data-id="${message.id}">
             <#if message.filename??>

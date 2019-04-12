@@ -1,6 +1,7 @@
 <#macro login path isRegisterForm>
+<div id="particles-js"></div>
 <div class="container">
-    <div class="row">
+    <div class="row form-container">
         <div class="col"></div>
         <div class="col-md-6 form">
             <form action="${path}" method="post" class="form-signin">
@@ -87,11 +88,4 @@
         <div class="col"></div>
     </div>
 </div>
-</#macro>
-
-<#macro logout>
-<form action="/logout" method="post">
-    <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-    <button class="btn btn-outline-primary" type="submit"><#if user??>Sign Out<#else>Get started</#if></button>
-</form>
 </#macro>

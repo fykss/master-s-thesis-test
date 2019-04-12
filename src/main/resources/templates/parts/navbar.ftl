@@ -3,8 +3,9 @@
 
 <nav class="navbar fixed-top navbar-expand-lg navbar-light">
     <div class="container">
-        <a class="navbar-brand" href="/">DBNeg</a>
-
+        <a class="navbar-brand" href="#">
+            <img src="/static/img/logo-ndb.jpg" width="45" height="30" alt="logo">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -36,7 +37,14 @@
             </ul>
 
             <div class="navbar-text mr-3"><#if user??>${name}<#else>Please, sign in</#if></div>
-        <@l.logout />
+            <form action="/logout" method="post">
+                <input type="hidden" name="_csrf" value="${_csrf.token}"/>
+            <#if user??>
+                <button class="btn btn-outline-primary" type="submit">Sign out</button>
+            <#else>
+                <button class="btn btn-outline-primary" type="submit">Get started</button>
+            </#if>
+            </form>
         </div>
     </div>
 </nav>
