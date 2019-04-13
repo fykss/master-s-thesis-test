@@ -16,7 +16,7 @@
     </#if>
     <div class="container mt-3">
         <div class="row">
-            <ul class="pagination col justify-content-center">
+            <ul class="pagination col justify-content-end">
                 <li class="page-item disabled">
                     <a class="page-link" href="#" tabindex="-1">Страницы</a>
                 </li>
@@ -37,7 +37,7 @@
             </#list>
             </ul>
 
-            <ul class="pagination col justify-content-center">
+            <ul class="pagination col justify-content-end">
                 <li class="page-item disabled">
                     <a class="page-link" href="#" tabindex="-1">Элементов на странице</a>
                 </li>

@@ -18,10 +18,24 @@
                 </li>
             <#if user??>
                 <li class="nav-item">
-                    <a class="nav-link" href="/main">Article</a>
+                    <a class="nav-link" href="/main">Science</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/user-messages/${currentUserId}">My Article</a>
+                    <a class="nav-link" href="/">Tech</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Life</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">More</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
                 </li>
             </#if>
             <#if isAdmin>
@@ -29,14 +43,9 @@
                 <a class="nav-link" href="/user">User list</a>
             </li>
             </#if>
-            <#if user??>
-            <li class="nav-item">
-                <a class="nav-link" href="/user/profile">Profile</a>
-            </li>
-            </#if>
             </ul>
 
-            <div class="navbar-text mr-3"><#if user??>${name}<#else>Please, sign in</#if></div>
+            <div class="navbar-text mr-3"><#if user??><a class="nav-link" href="/user-messages/${currentUserId}" style="padding: 0">${name}</a><#else>Please, sign in</#if></div>
             <form action="/logout" method="post">
                 <input type="hidden" name="_csrf" value="${_csrf.token}"/>
             <#if user??>

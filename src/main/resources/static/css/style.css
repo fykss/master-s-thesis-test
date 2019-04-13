@@ -596,7 +596,6 @@ input:focus {
 
 .common-title {
     font-family: 'Source Sans Pro', sans-serif;
-    /*font-family: "Helvetica Neue", sans-serif;*/
     font-size: 1.3em;
     height: 100vh;
     display: flex;
@@ -615,6 +614,7 @@ input:focus {
 .common-title span {
     color: #585858;
     margin-bottom: 2rem;
+    font-weight: 300;
 }
 
 .footer {
@@ -687,5 +687,9 @@ input:focus {
 
 .card a:hover {
     color: #313131;
+}
+
+.form-row {
+    margin-top: 70px;
 }
 

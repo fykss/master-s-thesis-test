@@ -33,9 +33,8 @@
         </div>
     </div>
 </div>
-<#if isCurrentUser>
-    <#include "parts/messageEdit.ftl" />
-</#if>
 
-<#include "parts/messageList.ftl" />
+    <#include "parts/messageList.ftl" />
+
+    <#include "parts/footer.ftl">
 </@c.page>
