@@ -26,7 +26,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/">Life</a>
                 </li>
-                
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">More</a>
                     <div class="dropdown-menu">
@@ -57,3 +57,22 @@
         </div>
     </div>
 </nav>
+
+<#--<div class="container">-->
+    <#--<div class="common-title">-->
+        <#--<h1>Negative result is also a result</h1>-->
+        <#--<span>If you have something to add on the subject, don't hesitate</span>-->
+        <#--<div class="greeting-button">-->
+<#--<#if !user??>-->
+            <#--<a href="/login" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Share it</a>-->
+
+<#--</#if>-->
+    <#--<a href="/" class="btn btn-outline-primary btn-lg" role="button" aria-pressed="true">About us</a>-->
+        <#--</div>-->
+    <#--</div>-->
+<#--</div>-->
+
+<#--<#include "news.ftl">-->
+
+<#--<#include "footer.ftl">-->
+

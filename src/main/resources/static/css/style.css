@@ -636,7 +636,7 @@ input:focus {
 
 .greeting-button button, .greeting-button a {
     width: 150px;
-    margin: 0 5px;
+    margin: 5px;
 }
 
 .greeting-button a:nth-child(2):hover {
@@ -645,11 +645,11 @@ input:focus {
     background-color: white;
 }
 
-.container h2::after {
+.container-news h2::after {
     content: "";
     width: 50px;
     height: 1px;
-    background-color: #525252;
+    background-color: #bebebe;
     position: relative;
     top: 20px;
     display: block;
@@ -693,3 +693,37 @@ input:focus {
     margin-top: 70px;
 }
 
+.container-about {
+    color: #333;
+    margin-top: 130px;
+}
+
+.container-about h2 {
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin-bottom: 90px;
+}
+
+.container-about h2::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #d6d6d6b8;
+    position: relative;
+    top: 45px;
+    display: block;
+}
+
+.container-about p, .container-about div {
+    font-weight: 300;
+}
+
+.container-about div:last-child {
+    margin-bottom: 65px;
+}
+
+.footer-about {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
