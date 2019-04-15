@@ -9,6 +9,7 @@
         <a class="btn btn-info" href="/user/subscribe/${userChannel.id}">Subscribe</a>
     </#if>
 </#if>
+
 <div class="container my-3">
     <div class="row">
         <div class="col">
@@ -33,6 +34,8 @@
         </div>
     </div>
 </div>
+
+    <#include "parts/messageEdit.ftl" />
 
     <#include "parts/messageList.ftl" />
 

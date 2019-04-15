@@ -1,4 +1,4 @@
-<footer class="navbar navbar-expand-lg navbar-light footer">
+<footer class="navbar navbar-expand-lg navbar-light footer ">
     <div class="container common-footer">
         <span class="footer-copyright text-center text-black-50">Copyright © 2019 Ndb Inc. All rights reserved.</span>
         <div class="footer-link">

@@ -18,16 +18,14 @@
         </div>
         <div>Alias, animi atque deleniti distinctio dolor ex expedita explicabo harum id incidunt libero magnam modi
             neque nulla, quia! Asperiores aspernatur cumque doloribus enim, minima modi nemo perspiciatis repellat
-            temporibus ullam.
-        </div>
-        <div>A accusamus aut beatae consequuntur cum eaque enim eos est eum ex excepturi fuga, harum illo illum iusto
-            magni nihil obcaecati odio praesentium provident quam quis tempora tempore temporibus voluptas.
+            temporibus ullam. Asperiores consequuntur quis voluptas voluptatibus. A architecto consequatur dolor eius et excepturi fuga
+            illo.
         </div>
     </div>
 
-    <div class="footer-about">
+    <#--<div class="footer-about">-->
         <#include "parts/footer.ftl">
-    </div>
+    <#--</div>-->
 </@c.page>
 
 
