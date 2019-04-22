@@ -157,6 +157,20 @@ public class MessageController {
         return "redirect:/user-messages/" + user;
     }
 
+    @PostMapping("/delete-message/{user}")
+    public String deleteMessage(
+//            @AuthenticationPrincipal User currentUser,
+            @PathVariable Long user,
+            @RequestParam("id") Message message
+//            @RequestParam("text") String text,
+//            @RequestParam("tag") String tag,
+//            @RequestParam("file") MultipartFile file
+    ) {
+        messageRepo.delete(message);
+        return "redirect:/user-messages/" + user;
+    }
+
+
     @GetMapping("/messages/{message}/like")
     public String like(
             @AuthenticationPrincipal User currentUser,

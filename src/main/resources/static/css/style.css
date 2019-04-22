@@ -758,3 +758,7 @@ input:focus {
     margin-bottom: 2px;
     color: #71717180;
 }
+
+.dropdown-menu button {
+    margin-top: 10px;
+}

@@ -8,7 +8,7 @@
             <div class="card-content m-2">
                 <div>
                     <#if message.filename??>
-                        <img src="/img/${message.filename}" />
+                        <a href="/"><img src="/img/${message.filename}" /></a>
                     </#if>
                 </div>
                 <div>
@@ -31,9 +31,9 @@
                     <#if message.author.id == currentUserId>
                         <div class="nav-item dropdown">
                             <a data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
-                            <div class="dropdown-menu">
+                            <div class="dropdown-menu text-center" style="padding: 1rem 0;">
                                 <a class="dropdown-item" href="/user-messages/${message.author.id}?message=${message.id}">Edit</a>
-                                <a class="dropdown-item" href="#">Delete</a>
+                                <button class="btn btn-outline-secondary" type="submit">Delete</button>
                             </div>
                         </div>
                     </#if>
