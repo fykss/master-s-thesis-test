@@ -45,6 +45,12 @@
             </#if>
             </ul>
 
+            <form method="get" action="/main" class="form-inline">
+                <input type="text" name="filter" class="filter-form" value="${filter?ifExists}"
+                       placeholder="Search field"/>
+                <button type="submit" class="btn mr-3 ml-2"><i class="fas fa-search"></i></button>
+            </form>
+
             <div class="navbar-text mr-3"><#if user??><a class="nav-link" href="/user-messages/${currentUserId}" style="padding: 0">${name}</a><#else>Please, sign in</#if></div>
             <form action="/logout" method="post">
                 <input type="hidden" name="_csrf" value="${_csrf.token}"/>

@@ -8,6 +8,7 @@ public class MessageDto {
     private Long id;
     private String text;
     private String tag;
+    private String messageText;
     private User author;
     private String filename;
     private Long likes;

@@ -8,11 +8,12 @@
             <div class="card-content m-2">
                 <div>
                     <#if message.filename??>
-                        <img src="/img/${message.filename}" />
+                        <a href="/"><img src="/img/${message.filename}" /></a>
+
                     </#if>
                 </div>
                 <div>
-                <a href="/">${message.text}</a>
+                <a href="/messages/${message.author.id}/${message.id}">${message.text}</a>
                 <i>#${message.tag}</i>
                 </div>
             </div>
@@ -29,25 +30,14 @@
                         ${message.likes}
                     </a>
                     <#if message.author.id == currentUserId>
-
-                    <div class="nav-item dropdown">
-                        <a data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="/user-messages/${message.author.id}?message=${message.id}">Edit</a>
-                            <a class="dropdown-item" href="#">Delete</a>
+                        <div class="nav-item dropdown">
+                            <a data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
+                            <div class="dropdown-menu text-center" style="padding: 1rem 0;">
+                                <a class="dropdown-item" href="/user-messages/${message.author.id}?message=${message.id}">Edit</a>
+                                <div class="dropdown-divider"></div>
+                                <button class="btn btn-outline-secondary" type="submit">Delete</button>
+                            </div>
                         </div>
-                    </div>
-
-                        <#--<a href="/user-messages/${message.author.id}?message=${message.id}">-->
-                            <#--<div class="dropdown-menu">-->
-                                <#--<a class="dropdown-item" href="#">Action</a>-->
-                                <#--<a class="dropdown-item" href="#">Another action</a>-->
-                                <#--<a class="dropdown-item" href="#">Something else here</a>-->
-                                <#--<div class="dropdown-divider"></div>-->
-                                <#--<a class="dropdown-item" href="#">Separated link</a>-->
-                            <#--</div>-->
-                            <#--<i class="fas fa-ellipsis-v"></i>-->
-                        <#--</a>-->
                     </#if>
                 </div>
             </div>

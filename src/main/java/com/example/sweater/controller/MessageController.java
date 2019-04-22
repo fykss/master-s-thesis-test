@@ -159,12 +159,8 @@ public class MessageController {
 
     @PostMapping("/delete-message/{user}")
     public String deleteMessage(
-//            @AuthenticationPrincipal User currentUser,
             @PathVariable Long user,
             @RequestParam("id") Message message
-//            @RequestParam("text") String text,
-//            @RequestParam("tag") String tag,
-//            @RequestParam("file") MultipartFile file
     ) {
         messageRepo.delete(message);
         return "redirect:/user-messages/" + user;
@@ -194,4 +190,15 @@ public class MessageController {
 
         return "redirect:" + components.getPath();
     }
+
+    @GetMapping("/messages/1/18")
+    public String messageAuthor118(Map<String, Object> model) {
+        return "/articles/auth-1-18";
+    }
+
+    @GetMapping("/messages/1/12")
+    public String messageAuthor112(Map<String, Object> model) {
+        return "/articles/auth-1-12";
+    }
 }
+

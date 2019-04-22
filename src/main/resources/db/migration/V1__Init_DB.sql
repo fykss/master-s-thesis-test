@@ -6,11 +6,13 @@ create table message (
     tag varchar(255),
     text varchar(2048) not null,
     user_id int8,
+
     primary key (id)
 );
 
 create table user_role (
     user_id int8 not null,
+
     roles varchar(255)
 );
 

@@ -9,10 +9,11 @@
                 <div>
                     <#if message.filename??>
                         <a href="/"><img src="/img/${message.filename}" /></a>
+
                     </#if>
                 </div>
                 <div>
-                <a href="/">${message.text}</a>
+                <a href="/messages/${message.author.id}/${message.id}">${message.text}</a>
                 <i>#${message.tag}</i>
                 </div>
             </div>
@@ -33,6 +34,7 @@
                             <a data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
                             <div class="dropdown-menu text-center" style="padding: 1rem 0;">
                                 <a class="dropdown-item" href="/user-messages/${message.author.id}?message=${message.id}">Edit</a>
+                                <div class="dropdown-divider"></div>
                                 <button class="btn btn-outline-secondary" type="submit">Delete</button>
                             </div>
                         </div>
