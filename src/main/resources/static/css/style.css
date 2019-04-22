@@ -709,7 +709,7 @@ input:focus {
 
 .container-about {
     color: #333;
-    margin-top: 130px;
+    margin-top: 124px;
 }
 
 .container-about h2 {
@@ -736,4 +736,18 @@ input:focus {
     width: 100%;
     position: relative;
     bottom: 0;
+}
+
+.card-like {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.fa-heart {
+    margin-right: 10px;
+}
+
+.row a:hover {
+    text-decoration: none;
 }
