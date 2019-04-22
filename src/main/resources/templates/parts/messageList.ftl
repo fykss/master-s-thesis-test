@@ -28,11 +28,15 @@
                         </#if>
                         ${message.likes}
                     </a>
-                    <#--<#if message.author.id == currentUserId>-->
-                        <#--<a class="col btn btn-primary" href="/user-messages/${message.author.id}?message=${message.id}">-->
-                            <#--Edit-->
-                        <#--</a>-->
-                    <#--</#if>-->
+                    <#if message.author.id == currentUserId>
+                        <div class="nav-item dropdown">
+                            <a data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="/user-messages/${message.author.id}?message=${message.id}">Edit</a>
+                                <a class="dropdown-item" href="#">Delete</a>
+                            </div>
+                        </div>
+                    </#if>
                 </div>
             </div>
         </div>
