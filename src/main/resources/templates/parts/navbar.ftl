@@ -28,7 +28,8 @@
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">More</a>
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button"
+                       aria-haspopup="true" aria-expanded="false">More</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
@@ -48,10 +49,12 @@
             <form method="get" action="/main" class="form-inline">
                 <input type="text" name="filter" class="filter-form" value="${filter?ifExists}"
                        placeholder="Search field"/>
-                <button type="submit" class="btn mr-3 ml-2"><i class="fas fa-search"></i></button>
+                <button type="submit" class="mr-3 ml-2"><i class="fas fa-search"></i></button>
             </form>
 
-            <div class="navbar-text mr-3"><#if user??><a class="nav-link" href="/user-messages/${currentUserId}" style="padding: 0">${name}</a><#else>Please, sign in</#if></div>
+            <div class="navbar-text mr-3"><#if user??><a class="nav-link" href="/user-messages/${currentUserId}"
+                                                         style="padding: 0">${name}</a><#else>Please, sign in</#if>
+            </div>
             <form action="/logout" method="post">
                 <input type="hidden" name="_csrf" value="${_csrf.token}"/>
             <#if user??>
@@ -63,22 +66,4 @@
         </div>
     </div>
 </nav>
-
-<#--<div class="container">-->
-    <#--<div class="common-title">-->
-        <#--<h1>Negative result is also a result</h1>-->
-        <#--<span>If you have something to add on the subject, don't hesitate</span>-->
-        <#--<div class="greeting-button">-->
-<#--<#if !user??>-->
-            <#--<a href="/login" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Share it</a>-->
-
-<#--</#if>-->
-    <#--<a href="/" class="btn btn-outline-primary btn-lg" role="button" aria-pressed="true">About us</a>-->
-        <#--</div>-->
-    <#--</div>-->
-<#--</div>-->
-
-<#--<#include "news.ftl">-->
-
-<#--<#include "footer.ftl">-->
 

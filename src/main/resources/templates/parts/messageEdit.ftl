@@ -1,7 +1,7 @@
 
 
 <div class="container">
-<a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+<a class="btn btn-outline-secondary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
     Article editor
 </a>
 <div class="collapse <#if message??>show</#if>" id="collapseExample">

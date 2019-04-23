@@ -193,12 +193,12 @@ public class MessageController {
 
     @GetMapping("/messages/1/18")
     public String messageAuthor118(Map<String, Object> model) {
-        return "/articles/auth-1-18";
+        return "/articles/auth-1-18/auth-1-18";
     }
 
     @GetMapping("/messages/1/12")
     public String messageAuthor112(Map<String, Object> model) {
-        return "/articles/auth-1-12";
+        return "/articles/auth-1-12/auth-1-12";
     }
 }
 
