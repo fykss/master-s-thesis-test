@@ -1,24 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71c9519e-8466-42d9-a2ef-094676dda2d8" name="Default Changelist" comment="card in process">
+    <list default="true" id="71c9519e-8466-42d9-a2ef-094676dda2d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sweater/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sweater/controller/MessageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/footer.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/footer.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/messageEdit.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/messageEdit.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/messageList.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/messageList.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/pager.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/pager.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userMessages.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userMessages.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/sweater/controller/MessageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/sweater/controller/MessageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/main.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/main.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/messageEdit.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/messageEdit.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/messageList.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/messageList.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/navbar.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/navbar.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/pager.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/pager.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/userMessages.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/userMessages.ftl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,6 +43,7 @@
           <entry key="class" value="1" />
           <entry key="css" value="23" />
           <entry key="ftl" value="157" />
+          <entry key="gitignore" value="1" />
           <entry key="html" value="2" />
           <entry key="java" value="77" />
           <entry key="jpg" value="2" />
@@ -83,6 +68,7 @@
           <entry key="JSON" value="7" />
           <entry key="JavaScript" value="21" />
           <entry key="Markdown" value="1" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="4" />
           <entry key="SQL" value="6" />
           <entry key="Scratch" value="1" />
@@ -98,7 +84,7 @@
           <entry key="json" value="5" />
           <entry key="properties" value="16" />
           <entry key="sql" value="14" />
-          <entry key="txt" value="271" />
+          <entry key="txt" value="280" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -109,7 +95,7 @@
           <entry key="JAVA" value="397" />
           <entry key="JSON" value="5" />
           <entry key="JavaScript" value="95" />
-          <entry key="PLAIN_TEXT" value="271" />
+          <entry key="PLAIN_TEXT" value="280" />
           <entry key="Properties" value="16" />
           <entry key="SQL" value="14" />
         </counts>
@@ -124,13 +110,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
+            <state relative-caret-position="191">
               <caret line="766" column="19" selection-start-line="766" selection-start-column="19" selection-end-line="766" selection-end-column="19" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -209,15 +200,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/about.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="39" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -255,6 +237,7 @@
       <find>.pagination</find>
       <find>about</find>
       <find>footer</find>
+      <find>.container-about</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -333,6 +316,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="726" />
     <option name="width" value="714" />
     <option name="height" value="900" />
   </component>
@@ -516,7 +500,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/vladyslavlietun/Documents/Projects/Java_Project/Java_Web/master-s-thesis-test/src/main/resources/templates/greeting.ftl" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556121756541" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556122333373" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -527,19 +511,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/templates/articles/auth-1-18/img" />
-      <recent name="$PROJECT_DIR$/src/main/resources/templates/articles/auth-1-18" />
-      <recent name="$PROJECT_DIR$/src/main/resources/templates/articles" />
-      <recent name="$PROJECT_DIR$/src/main/resources/static/img" />
-      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/static/img/auth-1-18" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates/articles/auth-1-12" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates/articles/auth-1-18" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates/articles" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates/articles/auth-1-18/img" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates/articles/auth-1-18" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates/articles" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -579,7 +563,7 @@
       <workItem from="1555964893152" duration="14876000" />
       <workItem from="1556039855876" duration="413000" />
       <workItem from="1556094872353" duration="635000" />
-      <workItem from="1556107060312" duration="3391000" />
+      <workItem from="1556107060312" duration="3834000" />
     </task>
     <task id="LOCAL-00001" summary="registration + login visual done">
       <created>1554723894783</created>
@@ -742,15 +726,21 @@
       <option name="project" value="LOCAL" />
       <updated>1556022308956</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="fixed bug">
+      <created>1556121975962</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1556121975962</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120592000" />
+    <option name="totallyTimeSpent" value="121035000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21458334" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -762,14 +752,14 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32902467" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46886018" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.46886018" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39952996" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.32902467" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32902467" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32902467" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32902467" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
@@ -842,16 +832,10 @@
     <MESSAGE value="about page" />
     <MESSAGE value="card in process" />
     <MESSAGE value="create example article" />
-    <option name="LAST_COMMIT_MESSAGE" value="create example article" />
+    <MESSAGE value="fixed bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed bug" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/sweater/config/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="38" column="29" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1161,10 +1145,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
+        <state relative-caret-position="191">
           <caret line="766" column="19" selection-start-line="766" selection-start-column="19" selection-end-line="766" selection-end-column="19" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
