@@ -1,8 +1,8 @@
 <#include "security.ftl">
 <#import "pager.ftl" as p>
 
-<@p.pager page url />
-<div class="container card-columns" id="message-list">
+<#--<@p.pager page url />-->
+<div class="container card-columns my-4" id="message-list">
     <#list page.content as message>
         <div class="card my-3" data-id="${message.id}" style="border-color: #ced4da45;">
             <div class="card-content m-2">
@@ -14,7 +14,7 @@
                 </div>
                 <div>
                     <a href="/messages/${message.author.id}/${message.id}">${message.text}</a>
-                    <i>#${message.tag}</i>
+                    <i class="card-tag">#${message.tag}</i>
                 </div>
             </div>
 
@@ -50,4 +50,4 @@
     </#list>
 </div>
 
-<@p.pager page url />
+<#--<@p.pager page url />-->

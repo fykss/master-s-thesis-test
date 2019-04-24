@@ -5,6 +5,9 @@ body {
     align-items: center;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.01);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 body::-webkit-scrollbar {
@@ -52,14 +55,28 @@ input::placeholder {
     margin-top: 10px;
 }
 
-.form-inline {
+.form-inlinee {
+    display: flex;
     flex-flow: inherit;
 }
 
-.form-inline button {
+.form-inlinee button {
     border: 0;
     cursor: pointer;
     background-color: white;
+}
+
+.pagination a {
+    color: #6c757d;
+}
+.pagination a:hover {
+    color: #555;
+}
+
+.page-item-active {
+    background-color: #7f7f7f;
+    border-color: #7f7f7f;
+    border-radius: .25rem;
 }
 
 i {
@@ -632,8 +649,10 @@ input:focus {
 }
 
 .footer {
+    width: 100%;
     font-size: .8rem;
-    margin-top: 100px;
+    margin: auto auto 0 auto;
+    padding-top: 70px;
 }
 
 .footer-link a {
@@ -700,11 +719,28 @@ input:focus {
 }
 
 .card a {
-    color: #555;
+    color: #212529;
+}
+
+.content a:first-child {
+    max-height: 66px;
+    font-weight: 500;
+}
+
+.card-footer a:first-child {
+    font-weight: 300;
+}
+.card-footer i {
+    color: #555555;
 }
 
 .card a:hover {
     color: #313131;
+}
+
+.card-tag {
+    font-weight: 300;
+    color: #555;
 }
 
 .card img {
@@ -728,7 +764,7 @@ input:focus {
 
 .container-about {
     color: #333;
-    margin-top: 124px;
+    margin-top: 100px;
 }
 
 .container-about h2 {
@@ -771,7 +807,7 @@ input:focus {
     text-decoration: none;
 }
 
-.fa-ellipsis-v {
+.card-footer a .fa-ellipsis-v {
     margin-right: 10px;
     color: #71717180;
 }
@@ -842,14 +878,23 @@ input:focus {
     border-bottom: 1px Solid #ced4da;
 }
 
+
 .article-container b {
     font-weight: bold;
 }
 
 .main-search {
+    width: 100%;
     border: 1px solid #ced4da45;
     border-radius: .25rem;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08);
+}
+
+@media screen and (min-width: 640px) {
+    .main-search {
+        width: 50%;
+        margin: 0 auto;
+    }
 }
 
 .main-search input {
@@ -858,5 +903,4 @@ input:focus {
 
 .main-search input:focus {
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08);
-
 }

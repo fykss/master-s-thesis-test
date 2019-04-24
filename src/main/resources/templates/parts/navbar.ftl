@@ -45,12 +45,13 @@
             </li>
             </#if>
             </ul>
-
-            <form method="get" action="/main" class="form-inline">
-                <input type="text" name="filter" class="filter-form" value="${filter?ifExists}"
-                       placeholder="Search field"/>
-                <button type="submit" class="mr-3 ml-2"><i class="fas fa-search"></i></button>
-            </form>
+            <#if user??>
+                <form method="get" action="/main" class="form-inlinee">
+                    <input type="text" name="filter" class="filter-form" value="${filter?ifExists}"
+                           placeholder="Search field"/>
+                    <button type="submit" class="mr-3 ml-2"><i class="fas fa-search"></i></button>
+                </form>
+            </#if>
 
             <div class="navbar-text mr-3"><#if user??><a class="nav-link" href="/user-messages/${currentUserId}"
                                                          style="padding: 0">${name}</a><#else>Please, sign in</#if>

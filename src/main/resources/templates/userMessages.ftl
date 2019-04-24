@@ -39,5 +39,4 @@
 
     <#include "parts/messageList.ftl" />
 
-    <#--<#include "parts/footer.ftl">-->
 </@c.page>

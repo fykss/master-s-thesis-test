@@ -72,7 +72,6 @@ public class MessageController {
             @RequestParam("file") MultipartFile file
     ) throws IOException {
         message.setAuthor(user);
-
         if (bindingResult.hasErrors()) {
             Map<String, String> errorsMap = ControllerUtils.getErrors(bindingResult);
 

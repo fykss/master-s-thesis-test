@@ -4,9 +4,9 @@
 <div class="common-container">
 
     <div class="container">
-        <div class="form-row justify-content-center">
+        <div class="justify-content-center">
             <div class="form-group main-search">
-                <form method="get" action="/main" class="form-inline">
+                <form method="get" action="/main" class="form-inlinee">
                     <input type="text" name="filter" class="form-control" value="${filter?ifExists}"
                            placeholder="Search by tag" style="border: 0"/>
                     <button type="submit" class="mr-3 ml-2"><i class="fas fa-search"></i></button>
@@ -19,6 +19,8 @@
 
     <#include "parts/messageList.ftl" />
 
-    <#include "parts/footer.ftl">
+    <#--<#include "parts/footer.ftl">-->
 </div>
 </@c.page>
+
+<#include "parts/footer.ftl">
